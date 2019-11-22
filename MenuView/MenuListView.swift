@@ -11,26 +11,13 @@ import SwiftUI
 struct MenuListView: View {
     var body: some View {
         VStack {
-            Text("Menu")
+            HStack {
+                ListHeaderView(text: "Menu")
+                Spacer()
+            }
             
             List(0..<10) { item in
-                HStack(alignment: .top, spacing: 15) {
-                    Image("pizza")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 150, height: 100, alignment: .center)
-                    VStack {
-                        Text("Chicken pizza")
-                        
-                        HStack {
-                            ForEach(0..<4) { item in
-                                Image("pizza_slice")
-                                .resizable()
-                                .scaledToFit()
-                            }
-                        }
-                    }
-                }
+                MenuRowView()
             }
         }
     }
