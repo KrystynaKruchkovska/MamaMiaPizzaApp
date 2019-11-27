@@ -11,7 +11,6 @@ import SwiftUI
 struct RatingsView: View {
     var body: some View {
         VStack {
-            Spacer()
             HStack {
                 ForEach(0..<4) { item in
                     Image(systemName: "star.circle")

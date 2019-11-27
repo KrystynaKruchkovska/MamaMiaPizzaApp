@@ -16,6 +16,8 @@ struct MenuRowView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150, height: 100, alignment: .center)
+                .clipShape(Capsule())
+                .shadow(radius: 10)
             VStack(alignment: .leading) {
                 Text("Chicken pizza")
                     .font(.title)
@@ -23,7 +25,7 @@ struct MenuRowView: View {
                     
                 
                 RatingsView()
-            }
+            }.padding()
         }
     }
 }
