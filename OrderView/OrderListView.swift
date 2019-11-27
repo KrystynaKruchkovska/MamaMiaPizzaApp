@@ -14,7 +14,6 @@ struct OrderListView: View {
           ListHeaderView(text: "Your order")
             List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/){ item in
                 OrderRowView()
-                
             }
         }
     }
